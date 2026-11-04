@@ -1,6 +1,6 @@
 # 🚍 BusPulse
 
-> **Automated Passenger Demand Analysis & Dynamic Bus Resource Allocation System**
+> **Automated Passenger Demand Analysis & Bus Fleet Management System**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js Version](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
