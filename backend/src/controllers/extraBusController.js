@@ -188,7 +188,8 @@ export const evaluateExtraBus = async (req, res) => {
     // passengerCount >= 40 && etaMinutes > 25 && driverAvailable && busAvailable
     // Exactly 25 minutes does NOT satisfy the rule.
     const passengerThresholdMet = passengerCount >= 40
-    const etaThresholdMet = etaAvailable && etaMinutes > 25
+    const noActiveBus = activeTrips.length === 0
+    const etaThresholdMet = noActiveBus ? true : etaAvailable && etaMinutes > 25
     const isApproved = passengerThresholdMet && etaThresholdMet && driverAvailable && busAvailable
 
     const allocationStatus = isApproved ? 'Extra Bus Approved' : 'Not Allocated'
