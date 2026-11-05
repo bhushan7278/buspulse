@@ -183,13 +183,11 @@ BusPulse/
 │   │   ├── routes/               # Express API route endpoints
 │   │   ├── utils/                # Route coordinates, email service, network helpers
 │   │   ├── index.js              # Application entrypoint
-│   │   └── update_db.js          # Standalone DB update script
 │   ├── ml/                       # YOLOv8 passenger detection model & wrapper
 │   │   ├── yolo_stub.py          # Python detection CLI wrapper
 │   │   ├── yolov8s.pt            # Pre-trained YOLOv8s model weights
 │   │   └── yolo_cache.pkl        # Model cache
 │   ├── scripts/                  # Data reconciliation & diagnostic scripts
-│   ├── tests/                    # Automated integration & lifecycle test suites
 │   ├── .env                      # Local backend environment variables (gitignored)
 │   ├── .env.example              # Safe backend environment variable template
 │   ├── .gitignore                # Backend-specific ignore rules
