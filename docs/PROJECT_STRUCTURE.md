@@ -47,7 +47,6 @@ BusPulse/
 │   │   │   ├── routeConfig.js              <- Route geometry, stops, ETAs & thresholds
 │   │   │   └── seedData.js                 <- Initial depot buses & drivers
 │   │   ├── index.js                        <- Backend server entry point
-│   │   └── update_db.js                    <- Standalone database migration utility
 │   │
 │   ├── ml/                                 <- Machine Learning & Computer Vision
 │   │   ├── yolo_stub.py                    <- Python CLI wrapper for YOLOv8 detection
@@ -59,12 +58,6 @@ BusPulse/
 │   │   ├── run_all_section_tests.js        <- Complete multi-section integration runner
 │   │   ├── test_checkout_and_tracking.js   <- Checkout & tracking verification suite
 │   │   └── test_md_approval_suite.js       <- Admin registration & approval test suite
-│   │
-│   ├── tests/                              <- Automated test suites
-│   │   ├── test_auth_and_regression.js     <- Auth, OTP, tokens & regression suite
-│   │   ├── test_complete_lifecycle.js      <- End-to-end trip & fleet lifecycle suite
-│   │   ├── test_depot_bus_management.js    <- Bus registry, soft-delete & conflict tests
-│   │   └── test_updated_features.js        <- Driver search, attendance & ETA matrix tests
 │   │
 │   ├── .env                                <- Local backend secrets (gitignored)
 │   ├── .env.example                        <- Safe backend environment template
